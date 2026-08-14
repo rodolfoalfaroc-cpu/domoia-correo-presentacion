@@ -1,8 +1,7 @@
-# DOMOIA — Correo de presentación
+# DOMO IA — Correo de presentación
 
-Correo de presentación para envío masivo. Presenta al equipo de agentes de DOMOIA
-partiendo desde una problemática concreta (prospectos que escriben fuera de horario)
-y lleva a agendar una reunión.
+Correo de presentación para envío masivo. Abre con un dato medido del piloto real,
+presenta al plantel de agentes con sus fotos y lleva a agendar una reunión.
 
 **→ [Ver el correo renderizado](https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/)**
 
@@ -13,80 +12,104 @@ y lleva a agendar una reunión.
 | Archivo | Para qué |
 |---|---|
 | `index.html` | Vista previa con datos de ejemplo. Es lo que abre el link de arriba. |
-| `email-template.html` | **Plantilla de producción.** Esta es la que se pega en la herramienta de envío. |
-| `assets/domoia-logo-email.png` | Logo optimizado para correo, 440 × 89 px, fondo navy `#1c2340`. |
+| `email-template.html` | **Plantilla de producción.** Es la que se pega en la herramienta de envío. |
+| `assets/domoia-logo.png` | Logo oficial, renderizado desde el SVG del sitio (480 × 80 px). |
+| `assets/agentes/avatar-*.png` | Avatares circulares de los 7 agentes, listos para correo. |
+| `assets/agentes/retrato-*.jpg` | Retratos originales descargados de domo-ia.com. |
 
-El logo ya está alojado y la plantilla lo apunta directo, así que funciona sin configurar nada:
-
-```
-https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/domoia-logo-email.png
-```
+Todas las imágenes ya están alojadas en este mismo repo y la plantilla las apunta con
+URL absoluta, así que **el correo funciona sin configurar ningún CDN**.
 
 ---
 
 ## Asunto
 
-**Recomendado:** `¿A qué hora te escribió el último cliente?`
+**Recomendado:** `Tus clientes te escriben a las 22:47`
 
 Alternativas para A/B testear:
 
-- `El mensaje de las 22:47`
-- `Lo que pasa con tus prospectos fuera de horario`
-- `{{empresa}} y los mensajes sin responder`
+- `¿A qué hora te escribió el último cliente?`
+- `El 54% escribió fuera de horario`
+- `406 conversaciones, 7 semanas, un dato incómodo`
 
 **Preheader** (no dejarlo vacío):
 
-> Un equipo de agentes que responde, califica y agenda mientras tú duermes. 90 segundos para verlo.
+> 406 conversaciones medidas. El 54% llegó fuera de horario. Te muestro qué hicimos, en 90 segundos.
+
+---
+
+## Cifras usadas
+
+Todas provienen del piloto real de 7 semanas (junio–julio 2026) y son verificables
+en los informes publicados del caso.
+
+| Cifra | Dónde aparece |
+|---|---|
+| 54% escribió fuera de horario hábil | Apertura + tira de cifras |
+| 406 conversaciones atendidas | Apertura + bloque de Antonia |
+| 76 horas recuperadas al equipo | Tira de cifras |
+| 89% de interesados no calificaba | Bloque de prueba (hallazgo de Clara) |
+| Costo por reunión: US$71 → US$8 | Bloque de prueba |
+| Agendas por semana: 1,1 → 8,6 | Bloque de prueba |
+
+**Nota:** el correo describe al cliente como "una corredora inmobiliaria de Santiago",
+sin nombrarlo. Si hay autorización para nombrarlo, la prueba gana fuerza.
 
 ---
 
 ## Estructura
 
-El correo recorre el ciclo completo del sistema. Cada bloque nombra a los agentes que participan.
-
 | Bloque | Agentes | Rol |
 |---|---|---|
-| 01 · Atrae | Sofía, Matías | Contenido y campañas en Meta |
+| 01 · Atrae | Sofía, Matías | Piezas, textos y gestión de campañas en Meta |
 | 02 · Atiende | Antonia | WhatsApp 24/7, califica y agenda |
-| 03 · Mide | Amanda, Lucas | Seguimiento de la conversión |
-| 04 · Aprende | Clara, Laura | Auditoría y mejora continua |
+| 03 · Mide | Amanda, Lucas | Notas de reunión y evaluación con rúbrica |
+| 04 · Aprende | Clara, Laura | Auditoría semanal y coaching del equipo humano |
 
-El bloque 04 es el único sobre fondo navy: la jerarquía visual refuerza que el
-aprendizaje continuo es el argumento diferenciador.
+Después del bloque 04 va una tarjeta de prueba en azul de marca que muestra la
+auditoría de Clara en acción. Es el cierre del argumento: el sistema no solo trabaja,
+corrige el rumbo.
 
 ---
 
 ## Identidad de marca
 
-Los tokens salen de la landing oficial, no de una interpretación del logo.
+Tokens tomados en vivo de `domo-ia.com`, no interpretados del logo.
 
-| Token | Hex | Uso |
+| Token | Hex | Uso en el correo |
 |---|---|---|
-| `navy` | `#1b2340` | Cabecera, bloque 04, títulos |
-| `navy-3` | `#141b33` | Fondo del bloque de video |
-| `gold` | `#d98e3a` | Botón CTA, filete, bordes de bloque |
-| `gold-2` | `#e8a951` | Acentos sobre fondo oscuro |
-| `amber-ink` | `#a06a1f` | Rótulos dorados sobre fondo claro |
-| `cream` | `#f6f3ec` | Fondo general |
-| `soft` | `#f0ebe0` | Fondo de bloques 01–03 |
-| `ink` | `#1f283c` | Texto principal |
-| `muted` | `#5d6478` | Texto secundario y pie |
-| `line` | `#e2dccc` | Bordes y separadores |
+| `--bg` | `#F6F3EC` | Fondo general |
+| `--surface` | `#FFFFFF` | Tarjeta principal y cabecera |
+| `--surface2` | `#F0EBE0` | Fondo de los 4 bloques de agentes |
+| `--text` | `#1C2340` | Texto principal y títulos |
+| `--muted` | `#5D6478` | Texto secundario y pie |
+| `--border` | `#E2DCCC` | Bordes y separadores |
+| `--brand` | `#33508F` | Tarjeta de prueba, enlaces |
+| `--brand2` | `#D98E3A` | Rótulos, botón CTA, anillo de los avatares |
+| `--chip` | `#F3E8D2` | Tira de cifras de apertura |
+| `--deep` | `#1B2340` | Bloque de video |
 
-**Tipografía:** `'Segoe UI', Helvetica, Arial`. Sin fuentes web — Outlook no las carga.
+**Tipografía:** `Archivo` en títulos y cifras, `IBM Plex Sans` en texto corrido,
+`IBM Plex Mono` en rótulos — la misma jerarquía del sitio. Se cargan por `@import`
+para los clientes que lo permiten, con fallback a `Segoe UI / Helvetica / Arial`
+en Gmail y Outlook, que no cargan fuentes web.
 
-**Contraste:** el dorado de marca no es legible como texto pequeño sobre crema.
-Los rótulos sobre fondo claro usan `#a06a1f` (amber-ink), que la landing ya define
-para ese caso. Sobre navy sí va `#e8a951` pleno.
+**Radios:** 14 px en tarjetas, 12 px en bloques, 10 px en elementos internos,
+99 px en el botón. Iguales a `--radius-card`, `--radius-md`, `--radius-sm` y
+`--radius-pill` del sitio.
+
+**Logo:** renderizado desde el mismo SVG inline del header de domo-ia.com
+(arco `#1C2340` + punto `#D98E3A`) con la tipografía Archivo a `wdth 125`,
+que es como está definido en `.mark`.
 
 ---
 
 ## Compatibilidad
 
-- Ancho 600 px, maquetado con tablas y estilos inline.
-- Botón con VML para que Outlook de escritorio lo renderice como píldora.
-- Probado conceptualmente contra Gmail, Outlook y Apple Mail. **Conviene pasarlo por
-  Litmus o Email on Acid antes del primer envío masivo.**
+- Ancho 600 px, tablas y estilos inline.
+- Botón con VML para que Outlook de escritorio lo muestre como píldora.
+- Media query que apila avatares y columnas bajo 620 px.
+- **Conviene pasarlo por Litmus o Email on Acid antes del primer envío masivo.**
 
 ---
 
@@ -94,13 +117,8 @@ para ese caso. Sobre navy sí va `#e8a951` pleno.
 
 - [ ] Reemplazar `[URL_AGENDA]`, `[URL_VIDEO]`, `[URL_MINIATURA]`, `[URL_BAJA]`.
 - [ ] Reemplazar `{{nombre}}`, `{{empresa}}`, `{{remitente_nombre}}`, `{{remitente_cargo}}`, `{{remitente_telefono}}`, `{{direccion_empresa}}`.
-- [ ] **Fallback de `{{nombre}}`:** si hay registros sin nombre, poner `Hola,` a secas. Un `Hola {{nombre}},` vacío mata la credibilidad del correo completo.
-- [ ] La miniatura del video tiene que ser una imagen alojada (1000 px de ancho, se muestra a 500) con el play dibujado encima. Los videos incrustados no funcionan en ningún cliente de correo.
-- [ ] Pasar los enlaces por `domo-ia.com` en vez de mezclar dominios (YouTube, Calendly): protege la entregabilidad.
+- [ ] **Fallback de `{{nombre}}`:** si hay registros sin nombre, poner `Hola,` a secas.
+- [ ] La miniatura del video debe ser una imagen alojada (1000 px de ancho, se muestra a 500) con el play dibujado encima. Los videos incrustados no funcionan en ningún cliente de correo.
+- [ ] Pasar los enlaces por `domo-ia.com` en vez de mezclar dominios: protege la entregabilidad.
 - [ ] Enlace de baja funcionando, obligatorio en envío masivo.
-
-## Pendiente de decisión
-
-El correo **no incluye ninguna cifra**. La landing menciona el resultado del piloto
-(costo por reunión agendada de US$71 a US$8 en 6 semanas). Si ese dato es publicable
-en frío, la línea de cierre gana bastante — pero requiere confirmación antes de usarlo.
+- [ ] Confirmar si se puede nombrar al cliente del piloto.

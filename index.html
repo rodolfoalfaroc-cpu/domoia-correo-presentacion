@@ -1,86 +1,130 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DOMOIA — Correo de presentación (vista previa)</title>
-<meta name="description" content="Vista previa del correo de presentación de DOMOIA.">
-</head><body style="margin:0;background:#f6f3ec;">
-<div style="background:#1b2340;color:#fff;font-family:'Segoe UI',Helvetica,Arial,sans-serif;padding:14px 20px;text-align:center;border-bottom:3px solid #d98e3a;">
-  <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#e8a951;margin-bottom:5px;">Vista previa · datos de ejemplo</div>
-  <div style="font-size:14px;line-height:1.5;">Asunto: <strong>¿A qué hora te escribió el último cliente?</strong></div>
+<title>DOMO IA - Correo de presentacion</title>
+<meta name="description" content="Vista previa del correo de presentacion de DOMO IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+</head><body style="margin:0;background:#F6F3EC;">
+<div style="background:#1B2340;padding:14px 20px;text-align:center;border-bottom:3px solid #D98E3A;font-family:'IBM Plex Sans','Segoe UI',Helvetica,Arial,sans-serif;">
+  <div style="font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;margin-bottom:6px;">Vista previa &middot; datos de ejemplo</div>
+  <div style="font-size:14px;line-height:1.5;color:#fff;">Asunto: <strong>Tus clientes te escriben a las 22:47</strong></div>
 </div><!-- ============================================================
-     DOMOIA — Correo de presentación (envío masivo)
-     Marca: tokens de domoia-landing/index.html
-       navy #1b2340 · navy-3 #141b33 · gold #d98e3a · gold-2 #e8a951
-       amber-ink #a06a1f · cream #f6f3ec · soft #f0ebe0
-       ink #1f283c · muted #5d6478 · line #e2dccc
-     Tipografía: 'Segoe UI', Helvetica, Arial  ·  Radio: 16px  ·  Botón: pill
-     Ancho 600px · tablas · estilos inline · Gmail / Outlook / Apple Mail
-     Reemplaza: Carolina Comercial Andes assets/domoia-logo-email.png # #
-                [URL_MINIATURA] #
+     DOMO IA — Correo de presentación (envío masivo) · v3
+     Sistema de marca tomado de domo-ia.com (tokens en vivo):
+       --bg #F6F3EC · --surface #FFFFFF · --surface2 #F0EBE0
+       --text #1C2340 · --muted #5D6478 · --border #E2DCCC
+       --brand #33508F · --brand2 #D98E3A · --accent #0E9F6E
+       --chip #F3E8D2 · --deep #1B2340
+       radius: card 14 · md 12 · sm 10 · pill 99
+     Tipografía: Archivo (títulos) · IBM Plex Sans (texto) · IBM Plex Mono (rótulos)
+     Cifras: piloto Nuevo Norte / Pocuro, 7 semanas, jun-jul 2026
+     Reemplaza: Carolina Comercial Andes # # [URL_MINIATURA] #
      ============================================================ -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f6f3ec;margin:0;padding:24px 12px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;">
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
+  @media only screen and (max-width:620px){
+    .px{padding-left:22px !important;padding-right:22px !important;}
+    .stack{display:block !important;width:100% !important;}
+    .avcol{padding-bottom:12px !important;}
+    .h1{font-size:24px !important;}
+  }
+</style>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6F3EC;margin:0;padding:24px 12px;font-family:'IBM Plex Sans','Segoe UI',Helvetica,Arial,sans-serif;">
   <tr>
     <td align="center">
 
       <!-- Preheader oculto -->
-      <div style="display:none;font-size:1px;color:#f6f3ec;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">
-        Un equipo de agentes que responde, califica y agenda mientras tú duermes. 90 segundos para verlo.
+      <div style="display:none;font-size:1px;color:#F6F3EC;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">
+        406 conversaciones medidas. El 54% llegó fuera de horario. Te muestro qué hicimos, en 90 segundos.
       </div>
 
-      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;background-color:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #e2dccc;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;background-color:#FFFFFF;border-radius:14px;overflow:hidden;border:1px solid #E2DCCC;">
 
-        <!-- ============ CABECERA CON LOGO ============ -->
+        <!-- ============ CABECERA ============ -->
         <tr>
-          <td align="center" style="background-color:#1b2340;padding:26px 40px 24px 40px;">
-            <img src="assets/domoia-logo-email.png" alt="DOMO IA — Digital workers. Measured results." width="220"
-                 style="width:220px;max-width:70%;height:auto;display:block;border:0;" />
+          <td align="center" class="px" style="background-color:#FFFFFF;padding:28px 40px 22px 40px;border-bottom:1px solid #E2DCCC;">
+            <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/domoia-logo.png"
+                 alt="DOMO IA" width="200"
+                 style="width:200px;max-width:62%;height:auto;display:block;border:0;" />
           </td>
-        </tr>
-        <tr>
-          <td style="height:3px;background-color:#d98e3a;font-size:0;line-height:0;">&nbsp;</td>
         </tr>
 
         <!-- ============ APERTURA ============ -->
         <tr>
-          <td style="padding:36px 40px 0 40px;">
-            <p style="margin:0 0 20px 0;font-size:16px;line-height:26px;color:#1f283c;">
+          <td class="px" style="padding:34px 40px 0 40px;">
+            <p style="margin:0 0 18px 0;font-size:16px;line-height:26px;color:#1C2340;">
               Hola Carolina,
             </p>
 
-            <p style="margin:0 0 20px 0;font-size:16px;line-height:26px;color:#1f283c;">
-              Una pregunta rápida: <strong>¿a qué hora llegó el último mensaje que nadie alcanzó a responder?</strong>
+            <p class="h1" style="margin:0 0 20px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:27px;line-height:1.18;font-weight:700;color:#1C2340;letter-spacing:-0.02em;">
+              ¿A qué hora te escribió el último cliente que nadie alcanzó a responder?
             </p>
 
-            <p style="margin:0 0 20px 0;font-size:16px;line-height:26px;color:#1f283c;">
-              Abre el WhatsApp de Comercial Andes y mira la hora de los últimos 20 mensajes entrantes.
-              Casi siempre aparece el mismo patrón: llegan después de las 19:00, un domingo por la tarde,
-              o justo en la hora en que todo el equipo estaba en reunión.
+            <p style="margin:0 0 18px 0;font-size:16px;line-height:26px;color:#1C2340;">
+              No es una pregunta retórica. La medimos.
             </p>
 
-            <p style="margin:0 0 28px 0;font-size:16px;line-height:26px;color:#1f283c;">
-              Ese prospecto no espera. Le escribe a tres empresas y se queda con la que le contesta primero.
-              No es un problema de tu equipo: es un problema de horario.
+            <p style="margin:0 0 24px 0;font-size:16px;line-height:26px;color:#5D6478;">
+              Durante <strong style="color:#1C2340;">7 semanas</strong> seguimos las
+              <strong style="color:#1C2340;">406 conversaciones</strong> que entraron por WhatsApp a una corredora
+              inmobiliaria de Santiago. Más de la mitad llegó cuando no había nadie para contestar:
+              de noche, los fines de semana, en la hora de almuerzo.
             </p>
           </td>
         </tr>
 
-        <!-- ============ BLOQUE VIDEO ============ -->
+        <!-- ============ TIRA DE CIFRAS ============ -->
         <tr>
-          <td style="padding:0 40px 32px 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#141b33;border-radius:16px;">
+          <td class="px" style="padding:0 40px 26px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F3E8D2;border-radius:12px;">
+              <tr>
+                <td class="stack" width="33.33%" align="center" style="padding:20px 10px 18px 10px;">
+                  <p style="margin:0 0 3px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:30px;font-weight:800;line-height:1;color:#1C2340;">54%</p>
+                  <p style="margin:0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#5D6478;line-height:1.5;">Escribió fuera<br>de horario</p>
+                </td>
+                <td class="stack" width="33.33%" align="center" style="padding:20px 10px 18px 10px;border-left:1px solid #E2DCCC;border-right:1px solid #E2DCCC;">
+                  <p style="margin:0 0 3px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:30px;font-weight:800;line-height:1;color:#1C2340;">406</p>
+                  <p style="margin:0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#5D6478;line-height:1.5;">Conversaciones<br>atendidas</p>
+                </td>
+                <td class="stack" width="33.33%" align="center" style="padding:20px 10px 18px 10px;">
+                  <p style="margin:0 0 3px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:30px;font-weight:800;line-height:1;color:#1C2340;">76 h</p>
+                  <p style="margin:0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#5D6478;line-height:1.5;">Recuperadas al<br>equipo humano</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="px" style="padding:0 40px 28px 40px;">
+            <p style="margin:0;font-size:16px;line-height:26px;color:#1C2340;">
+              Ese prospecto no espera: le escribe a tres empresas y se queda con la que le contesta primero.
+              No es un problema de tu equipo, es un problema de horario.
+              <strong>Y se resuelve poniendo a alguien que no duerme.</strong>
+            </p>
+          </td>
+        </tr>
+
+        <!-- ============ VIDEO ============ -->
+        <tr>
+          <td class="px" style="padding:0 40px 32px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#1B2340;border-radius:14px;">
               <tr>
                 <td style="padding:24px 24px 22px 24px;" align="center">
-                  <p style="margin:0 0 10px 0;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#e8a951;">
+                  <p style="margin:0 0 9px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;">
                     Véelo funcionando
                   </p>
-                  <p style="margin:0 0 18px 0;font-size:15px;line-height:24px;color:rgba(255,255,255,0.78);">
-                    Grabamos <strong style="color:#ffffff;">90 segundos</strong> con el sistema andando de verdad:
+                  <p style="margin:0 0 18px 0;font-size:15px;line-height:24px;color:#A7B0CC;">
+                    <strong style="color:#FFFFFF;">90 segundos</strong> con el sistema andando de verdad:
                     una consulta entrando a medianoche y saliendo agendada.
                   </p>
                   <a href="#" style="text-decoration:none;display:block;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#2d3963;border-radius:12px;"><tr><td align="center" style="padding:60px 20px;color:#9aa0ad;font-size:12px;letter-spacing:1px;">MINIATURA DEL VIDEO<br><span style="font-size:38px;color:#e8a951;line-height:1.6;">&#9654;</span></td></tr></table>
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#252F55;border-radius:10px;"><tr><td align="center" style="padding:62px 20px;font-family:Consolas,monospace;color:#A7B0CC;font-size:11px;letter-spacing:.1em;">MINIATURA DEL VIDEO<br><span style="font-size:40px;color:#D98E3A;line-height:1.7;">&#9654;</span></td></tr></table>
                   </a>
-                  <a href="#" style="display:inline-block;margin-top:18px;font-size:15px;font-weight:700;color:#e8a951;text-decoration:none;">
+                  <a href="#" style="display:inline-block;margin-top:18px;font-size:15px;font-weight:700;color:#D98E3A;text-decoration:none;">
                     ▶&nbsp; Ver cómo funciona (1:30)
                   </a>
                 </td>
@@ -91,29 +135,35 @@
 
         <!-- ============ INTRO EQUIPO ============ -->
         <tr>
-          <td style="padding:0 40px 8px 40px;">
-            <p style="margin:0 0 6px 0;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#a06a1f;">
-              El equipo
+          <td class="px" style="padding:0 40px 22px 40px;">
+            <p style="margin:0 0 8px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;">
+              El plantel
             </p>
-            <p style="margin:0 0 24px 0;font-size:16px;line-height:26px;color:#1f283c;">
-              DOMOIA no es un chatbot con respuestas armadas. Con nosotros tienes un equipo de agentes
-              que sin descanso atrae, atiende, mide y aprende. Cada uno con su nombre y su rol:
+            <p style="margin:0 0 10px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;line-height:1.2;color:#1C2340;letter-spacing:-0.015em;">
+              No es un chatbot. Es un equipo que no descansa.
+            </p>
+            <p style="margin:0;font-size:15.5px;line-height:25px;color:#5D6478;">
+              Siete agentes que atraen, atienden, miden y aprenden. Cada uno con su nombre y su rol:
             </p>
           </td>
         </tr>
 
-        <!-- Bloque 01 -->
+        <!-- ---------- 01 ATRAE ---------- -->
         <tr>
-          <td style="padding:0 40px 14px 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0ebe0;border-left:3px solid #d98e3a;border-radius:0 12px 12px 0;">
+          <td class="px" style="padding:0 40px 12px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F0EBE0;border-radius:12px;">
               <tr>
-                <td style="padding:18px 22px;">
-                  <p style="margin:0 0 6px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#a06a1f;font-weight:700;">01 · Atrae</p>
-                  <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#1b2340;">Sofía y Matías · Contenido y campañas en Meta</p>
-                  <p style="margin:0;font-size:15px;line-height:23px;color:#5d6478;">
-                    <strong style="color:#1f283c;">Sofía</strong> crea las piezas, los textos y las variantes de tus avisos.
-                    <strong style="color:#1f283c;">Matías</strong> supervisa las campañas todos los días y reasigna el presupuesto
-                    hacia lo que está rindiendo. Sin esperar semanas por material nuevo ni seguir pagando avisos que ya se apagaron.
+                <td class="avcol stack" width="88" valign="top" style="padding:18px 0 18px 18px;">
+                  <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/agentes/avatar-sofia.png" alt="Sofía" width="64" style="width:64px;height:64px;display:block;border:0;margin-bottom:8px;" />
+                  <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/agentes/avatar-matias.png" alt="Matías" width="64" style="width:64px;height:64px;display:block;border:0;" />
+                </td>
+                <td class="stack" valign="top" style="padding:18px 20px 18px 14px;">
+                  <p style="margin:0 0 5px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;">01 · Atrae</p>
+                  <p style="margin:0 0 7px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:19px;font-weight:700;color:#1C2340;">Sofía y Matías</p>
+                  <p style="margin:0;font-size:14.5px;line-height:23px;color:#5D6478;">
+                    <strong style="color:#1C2340;">Sofía</strong> diseña las piezas, los textos y las variantes de tus avisos.
+                    <strong style="color:#1C2340;">Matías</strong> supervisa las campañas a diario y mueve el presupuesto
+                    hacia lo que está rindiendo. Sin esperar semanas por material nuevo ni seguir pagando avisos apagados.
                   </p>
                 </td>
               </tr>
@@ -121,17 +171,20 @@
           </td>
         </tr>
 
-        <!-- Bloque 02 -->
+        <!-- ---------- 02 ATIENDE ---------- -->
         <tr>
-          <td style="padding:0 40px 14px 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0ebe0;border-left:3px solid #d98e3a;border-radius:0 12px 12px 0;">
+          <td class="px" style="padding:0 40px 12px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F0EBE0;border-radius:12px;">
               <tr>
-                <td style="padding:18px 22px;">
-                  <p style="margin:0 0 6px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#a06a1f;font-weight:700;">02 · Atiende</p>
-                  <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#1b2340;">Antonia · WhatsApp, 24/7</p>
-                  <p style="margin:0;font-size:15px;line-height:23px;color:#5d6478;">
-                    <strong style="color:#1f283c;">Antonia</strong> responde en segundos, a cualquier hora.
-                    Califica al prospecto, resuelve las dudas de siempre y agenda la reunión.
+                <td class="avcol stack" width="88" valign="top" style="padding:18px 0 18px 18px;">
+                  <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/agentes/avatar-antonia.png" alt="Antonia" width="64" style="width:64px;height:64px;display:block;border:0;" />
+                </td>
+                <td class="stack" valign="top" style="padding:18px 20px 18px 14px;">
+                  <p style="margin:0 0 5px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;">02 · Atiende</p>
+                  <p style="margin:0 0 7px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:19px;font-weight:700;color:#1C2340;">Antonia</p>
+                  <p style="margin:0;font-size:14.5px;line-height:23px;color:#5D6478;">
+                    Es quien atendió esas 406 conversaciones. Responde en segundos a cualquier hora,
+                    califica al prospecto, resuelve las dudas de siempre y agenda la reunión.
                     Tu equipo recibe la conversación cuando ya vale la pena tomarla.
                   </p>
                 </td>
@@ -140,18 +193,22 @@
           </td>
         </tr>
 
-        <!-- Bloque 03 -->
+        <!-- ---------- 03 MIDE ---------- -->
         <tr>
-          <td style="padding:0 40px 14px 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0ebe0;border-left:3px solid #d98e3a;border-radius:0 12px 12px 0;">
+          <td class="px" style="padding:0 40px 12px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F0EBE0;border-radius:12px;">
               <tr>
-                <td style="padding:18px 22px;">
-                  <p style="margin:0 0 6px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#a06a1f;font-weight:700;">03 · Mide</p>
-                  <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#1b2340;">Amanda y Lucas · Seguimiento de la conversión</p>
-                  <p style="margin:0;font-size:15px;line-height:23px;color:#5d6478;">
-                    <strong style="color:#1f283c;">Amanda</strong> documenta cada reunión comercial: qué se dijo, qué se prometió,
-                    qué quedó pendiente. <strong style="color:#1f283c;">Lucas</strong> la evalúa con una rúbrica profesional.
-                    Dejas de adivinar por qué se cayó un negocio.
+                <td class="avcol stack" width="88" valign="top" style="padding:18px 0 18px 18px;">
+                  <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/agentes/avatar-amanda.png" alt="Amanda" width="64" style="width:64px;height:64px;display:block;border:0;margin-bottom:8px;" />
+                  <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/agentes/avatar-lucas.png" alt="Lucas" width="64" style="width:64px;height:64px;display:block;border:0;" />
+                </td>
+                <td class="stack" valign="top" style="padding:18px 20px 18px 14px;">
+                  <p style="margin:0 0 5px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;">03 · Mide</p>
+                  <p style="margin:0 0 7px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:19px;font-weight:700;color:#1C2340;">Amanda y Lucas</p>
+                  <p style="margin:0;font-size:14.5px;line-height:23px;color:#5D6478;">
+                    <strong style="color:#1C2340;">Amanda</strong> documenta cada reunión comercial: qué se dijo,
+                    qué se prometió, qué quedó pendiente. <strong style="color:#1C2340;">Lucas</strong> la evalúa
+                    con una rúbrica profesional. Dejas de adivinar por qué se cayó un negocio.
                   </p>
                 </td>
               </tr>
@@ -159,19 +216,65 @@
           </td>
         </tr>
 
-        <!-- Bloque 04 — destacado en navy -->
+        <!-- ---------- 04 APRENDE ---------- -->
         <tr>
-          <td style="padding:0 40px 30px 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#1b2340;border-left:3px solid #e8a951;border-radius:0 12px 12px 0;">
+          <td class="px" style="padding:0 40px 12px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F0EBE0;border-radius:12px;border:1.5px solid #D98E3A;">
               <tr>
-                <td style="padding:18px 22px;">
-                  <p style="margin:0 0 6px 0;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#e8a951;font-weight:700;">04 · Aprende</p>
-                  <p style="margin:0 0 7px 0;font-size:16px;font-weight:700;color:#ffffff;">Clara y Laura · Auditoría y mejora continua</p>
-                  <p style="margin:0;font-size:15px;line-height:23px;color:rgba(255,255,255,0.76);">
-                    Aquí está la diferencia real. <strong style="color:#ffffff;">Clara</strong> audita las conversaciones cada semana
-                    y detecta dónde se está perdiendo gente. <strong style="color:#ffffff;">Laura</strong> toma esos patrones
-                    y entrena a tu equipo humano. Todo el ciclo se recalibra con lo que funcionó <em>y</em> con lo que no.
-                    <strong style="color:#e8a951;">El mes tres no trabaja igual que el mes uno.</strong>
+                <td class="avcol stack" width="88" valign="top" style="padding:18px 0 18px 18px;">
+                  <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/agentes/avatar-clara.png" alt="Clara" width="64" style="width:64px;height:64px;display:block;border:0;margin-bottom:8px;" />
+                  <img src="https://rodolfoalfaroc-cpu.github.io/domoia-correo-presentacion/assets/agentes/avatar-laura.png" alt="Laura" width="64" style="width:64px;height:64px;display:block;border:0;" />
+                </td>
+                <td class="stack" valign="top" style="padding:18px 20px 18px 14px;">
+                  <p style="margin:0 0 5px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;">04 · Aprende</p>
+                  <p style="margin:0 0 7px 0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:19px;font-weight:700;color:#1C2340;">Clara y Laura</p>
+                  <p style="margin:0;font-size:14.5px;line-height:23px;color:#5D6478;">
+                    Aquí está la diferencia real. <strong style="color:#1C2340;">Clara</strong> audita las conversaciones
+                    cada semana y detecta dónde se pierde la gente. <strong style="color:#1C2340;">Laura</strong> toma
+                    esos patrones y entrena a tu equipo humano. El sistema aprende de lo que funcionó
+                    <em>y</em> de lo que no. <strong style="color:#1C2340;">El mes tres no trabaja igual que el mes uno.</strong>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ============ PRUEBA: LA AUDITORÍA EN ACCIÓN ============ -->
+        <tr>
+          <td class="px" style="padding:16px 40px 30px 40px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#33508F;border-radius:14px;">
+              <tr>
+                <td style="padding:24px 26px 22px 26px;">
+                  <p style="margin:0 0 10px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#F3E8D2;">
+                    Qué pasa cuando el sistema aprende
+                  </p>
+                  <p style="margin:0 0 16px 0;font-size:15.5px;line-height:25px;color:#FFFFFF;">
+                    En la auditoría de julio, Clara detectó que el <strong>89%</strong> de los interesados no calificaba.
+                    El problema no era la conversación: era el anuncio. Se cambió el ángulo de la campaña.
+                  </p>
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td class="stack" width="50%" style="padding:0 8px 0 0;">
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:rgba(255,255,255,0.10);border-radius:10px;">
+                          <tr><td align="center" style="padding:14px 8px;">
+                            <p style="margin:0 0 4px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#A7B0CC;">Costo por reunión</p>
+                            <p style="margin:0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:23px;font-weight:800;line-height:1.2;color:#FFFFFF;">US$71 → US$8</p>
+                          </td></tr>
+                        </table>
+                      </td>
+                      <td class="stack" width="50%" style="padding:0 0 0 8px;">
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:rgba(255,255,255,0.10);border-radius:10px;">
+                          <tr><td align="center" style="padding:14px 8px;">
+                            <p style="margin:0 0 4px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#A7B0CC;">Agendas por semana</p>
+                            <p style="margin:0;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:23px;font-weight:800;line-height:1.2;color:#FFFFFF;">1,1 → 8,6</p>
+                          </td></tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <p style="margin:14px 0 0 0;font-size:13px;line-height:20px;color:#A7B0CC;">
+                    Piloto de 7 semanas, junio–julio 2026. Ningún vendedor trabajó más horas: trabajó sobre mejores prospectos.
                   </p>
                 </td>
               </tr>
@@ -181,22 +284,22 @@
 
         <!-- ============ CIERRE + CTA ============ -->
         <tr>
-          <td style="padding:0 40px 8px 40px;">
-            <p style="margin:0 0 26px 0;font-size:16px;line-height:26px;color:#1f283c;">
-              Si quieres, te muestro cómo se vería esto con los números de Comercial Andes.
-              Son 20 minutos, sin presentación genérica: revisamos tu caso y decides.
+          <td class="px" style="padding:0 40px 8px 40px;">
+            <p style="margin:0 0 24px 0;font-size:16px;line-height:26px;color:#1C2340;">
+              Si quieres, revisamos cómo se vería esto con los números de Comercial Andes.
+              Son 20 minutos, sin presentación genérica: miramos tu caso y decides.
             </p>
           </td>
         </tr>
 
         <tr>
-          <td align="center" style="padding:0 40px 34px 40px;">
+          <td align="center" class="px" style="padding:0 40px 32px 40px;">
             <!--[if mso]>
             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"
-                         href="#" style="height:52px;v-text-anchor:middle;width:270px;" arcsize="50%"
-                         stroke="f" fillcolor="#d98e3a">
+                         href="#" style="height:52px;v-text-anchor:middle;width:280px;" arcsize="50%"
+                         stroke="f" fillcolor="#D98E3A">
               <w:anchorlock/>
-              <center style="color:#221703;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;">
+              <center style="color:#221703;font-family:Arial,sans-serif;font-size:16px;font-weight:700;">
                 Agendar 20 minutos
               </center>
             </v:roundrect>
@@ -204,15 +307,15 @@
             <!--[if !mso]><!-- -->
             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td align="center" style="background-color:#d98e3a;background-image:linear-gradient(135deg,#e8a951,#d98e3a);border-radius:999px;">
-                  <a href="#" style="display:inline-block;padding:16px 34px;font-size:16px;font-weight:700;color:#221703;text-decoration:none;line-height:1;">
+                <td align="center" style="background-color:#D98E3A;border-radius:99px;">
+                  <a href="#" style="display:inline-block;padding:16px 34px;font-family:'Archivo','Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#221703;text-decoration:none;line-height:1;">
                     Agendar 20 minutos&nbsp; →
                   </a>
                 </td>
               </tr>
             </table>
             <!--<![endif]-->
-            <p style="margin:14px 0 0 0;font-size:13.5px;line-height:20px;color:#5d6478;">
+            <p style="margin:14px 0 0 0;font-size:13.5px;line-height:20px;color:#5D6478;">
               Eliges el horario que te acomode. Si prefieres, responde este correo y lo coordinamos.
             </p>
           </td>
@@ -220,13 +323,13 @@
 
         <!-- ============ FIRMA ============ -->
         <tr>
-          <td style="padding:0 40px 8px 40px;border-top:1px solid #e2dccc;">
-            <p style="margin:24px 0 4px 0;font-size:15px;line-height:24px;color:#1f283c;">
+          <td class="px" style="padding:0 40px 8px 40px;border-top:1px solid #E2DCCC;">
+            <p style="margin:24px 0 4px 0;font-size:15px;line-height:24px;color:#1C2340;">
               Un abrazo,<br />
-              <strong style="color:#1b2340;">Rodolfo Alfaro</strong>
+              <strong>Rodolfo Alfaro</strong>
             </p>
-            <p style="margin:0 0 20px 0;font-size:14px;line-height:22px;color:#5d6478;">
-              Director · DOMOIA<br />
+            <p style="margin:0 0 20px 0;font-size:14px;line-height:22px;color:#5D6478;">
+              Director · DOMO IA<br />
               +56 9 0000 0000
             </p>
           </td>
@@ -234,8 +337,8 @@
 
         <!-- ============ P.D. ============ -->
         <tr>
-          <td style="padding:0 40px 34px 40px;">
-            <p style="margin:0;font-size:14px;line-height:23px;color:#5d6478;font-style:italic;">
+          <td class="px" style="padding:0 40px 32px 40px;">
+            <p style="margin:0;font-size:14px;line-height:23px;color:#5D6478;font-style:italic;">
               P.D. Si prefieres partir por lo concreto, mira solo el video.
               En 90 segundos vas a saber si esto tiene sentido para Comercial Andes.
             </p>
@@ -248,13 +351,13 @@
       <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;">
         <tr>
           <td align="center" style="padding:22px 40px;">
-            <p style="margin:0 0 8px 0;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#a06a1f;">
-              Digital workers. Measured results.
+            <p style="margin:0 0 9px 0;font-family:'IBM Plex Mono',Consolas,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#D98E3A;">
+              Digital workers · Measured results
             </p>
-            <p style="margin:0;font-size:12px;line-height:19px;color:#5d6478;">
-              DOMOIA · Santiago, Chile · <a href="https://domo-ia.com" style="color:#a06a1f;text-decoration:none;">domo-ia.com</a><br />
+            <p style="margin:0;font-size:12px;line-height:19px;color:#5D6478;">
+              DOMO IA · Santiago, Chile · <a href="https://domo-ia.com" style="color:#33508F;text-decoration:none;">domo-ia.com</a><br />
               Recibiste este correo porque Comercial Andes figura en nuestro registro de contacto comercial.
-              <a href="#" style="color:#5d6478;text-decoration:underline;">Dar de baja</a>
+              <a href="#" style="color:#5D6478;text-decoration:underline;">Dar de baja</a>
             </p>
           </td>
         </tr>
