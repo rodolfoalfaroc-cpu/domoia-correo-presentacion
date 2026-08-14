@@ -34,7 +34,7 @@ Alternativas para A/B testear:
 
 **Preheader** (no dejarlo vacío):
 
-> 406 conversaciones medidas. El 54% llegó fuera de horario. Te muestro qué hicimos, en 90 segundos.
+> 406 conversaciones medidas en 7 semanas. El 54% llegó fuera de horario. Esto es lo que hicimos.
 
 ---
 
@@ -69,6 +69,9 @@ sin nombrarlo. Si hay autorización para nombrarlo, la prueba gana fuerza.
 Después del bloque 04 va una tarjeta de prueba en azul de marca que muestra la
 auditoría de Clara en acción. Es el cierre del argumento: el sistema no solo trabaja,
 corrige el rumbo.
+
+El correo **no incluye video**. El P.D. ofrece el informe completo del piloto como
+segunda salida para quien no quiere comprometer agenda todavía.
 
 ---
 
@@ -115,10 +118,10 @@ que es como está definido en `.mark`.
 
 ## Antes de enviar
 
-- [ ] Reemplazar `[URL_AGENDA]`, `[URL_VIDEO]`, `[URL_MINIATURA]`, `[URL_BAJA]`.
+- [ ] Reemplazar `[URL_AGENDA]` y `[URL_BAJA]`.
 - [ ] Reemplazar `{{nombre}}`, `{{empresa}}`, `{{remitente_nombre}}`, `{{remitente_cargo}}`, `{{remitente_telefono}}`, `{{direccion_empresa}}`.
 - [ ] **Fallback de `{{nombre}}`:** si hay registros sin nombre, poner `Hola,` a secas.
-- [ ] La miniatura del video debe ser una imagen alojada (1000 px de ancho, se muestra a 500) con el play dibujado encima. Los videos incrustados no funcionan en ningún cliente de correo.
+- [ ] Tener listo el informe del piloto para mandarlo a quien responda al P.D.
 - [ ] Pasar los enlaces por `domo-ia.com` en vez de mezclar dominios: protege la entregabilidad.
 - [ ] Enlace de baja funcionando, obligatorio en envío masivo.
 - [ ] Confirmar si se puede nombrar al cliente del piloto.
